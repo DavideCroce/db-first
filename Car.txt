@@ -1,0 +1,26 @@
+--Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+All'interno della cartella potete scrivere tutto in un semplice file di testo (.txt) o se preferite lavorare con excel potete farlo ma 
+magari allegate un'immagine del vostro foglio cosicchè sia dipiù facile consultazione dai ragazzi oggi pomeriggio!--
+
+dati da inserire:
+
+ID, Codice della macchina, Targa, Normativa (esempio: euro6), Potenza fiscale, Cilindrata, kilowatt, Anno di Immatricolazione, Emissioni CO2, Consumo(litri/100km), 
+Prezzo listino(iva esclusa), Prezzo chiavi in mano(iva inclusa), Tipo di carburante, Immagine della macchina.
+
+
+AUTO USATE:
+
+ID - BIGINT 
+CODICE DELLA MACCHINA - NOT_NULL - VARCHAR(9)
+TARGA - NOT_NULL - VARCHAR(7)
+NORMATIVA - NOT_NULL - VARCHAR(11)
+POTENZA FISCALE - NOT_NULL - SMALLINT
+CILINDRATA - NOT_NULL - BIGINT
+KW - NOT_NULL - MEDIUMINT
+ANNO DI IMMATRICOLAZIONE - NOT_NULL - INT
+EMISSIONI CO2 - NOT_NULL - MEDIUMINT
+CONSUMO (LITRI/100KM) - NOT_NULL - FLOAT(1,1)
+PREZZO DI LISTINO (IVA ESCLUSA) - DOUBLE(5,2)
+PREZZO CHIAVI IN MANO (IVA INCLUSA) - DOUBLE(5,2)
+TIPO DI CARBURANTE - NOT_NULL - VARCHAR (20)
+IMMAGINE DELLA MACCHINA - NULL - VARCHAR (255)
