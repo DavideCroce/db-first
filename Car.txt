@@ -4,23 +4,41 @@ magari allegate un'immagine del vostro foglio cosicchè sia dipiù facile consul
 
 dati da inserire:
 
-ID, Codice della macchina, Targa, Normativa (esempio: euro6), Potenza fiscale, Cilindrata, kilowatt, Anno di Immatricolazione, Emissioni CO2, Consumo(litri/100km), 
-Prezzo listino(iva esclusa), Prezzo chiavi in mano(iva inclusa), Tipo di carburante, Immagine della macchina.
+ID, marca della macchina, modello della macchina, codice della macchina Targa, Normativa (esempio: euro6), Potenza fiscale, Cilindrata, kilowatt, 
+Anno di Immatricolazione, Emissioni CO2, Consumo(litri/100km), Prezzo listino(iva esclusa), Prezzo chiavi in mano(iva inclusa), Tipo di carburante, Immagine della macchina.
 
 
 AUTO USATE:
 
-ID - BIGINT 
-CODICE DELLA MACCHINA - NOT_NULL - VARCHAR(9)
-TARGA - NOT_NULL - VARCHAR(7)
-NORMATIVA - NOT_NULL - VARCHAR(11)
-POTENZA FISCALE - NOT_NULL - SMALLINT
-CILINDRATA - NOT_NULL - BIGINT
-KW - NOT_NULL - MEDIUMINT
-ANNO DI IMMATRICOLAZIONE - NOT_NULL - INT
-EMISSIONI CO2 - NOT_NULL - MEDIUMINT
-CONSUMO (LITRI/100KM) - NOT_NULL - FLOAT(1,1)
-PREZZO DI LISTINO (IVA ESCLUSA) - DOUBLE(5,2)
-PREZZO CHIAVI IN MANO (IVA INCLUSA) - DOUBLE(5,2)
-TIPO DI CARBURANTE - NOT_NULL - VARCHAR (20)
-IMMAGINE DELLA MACCHINA - NULL - VARCHAR (255)
+ID    -    NOT_NULL   -   BIGINT 
+
+MARCA DELLA MACCHINA    -    NOT_NULL   -   VARCHAR(50)
+
+MODELLO DELLA MACCHINA    -    NOT_NULL   -   VARCHAR(50)
+
+CODICE DELLA MACCHINA    -    NOT_NULL    -    CHAR(9)
+
+TARGA    -    NOT_NULL    -    CHAR(7)
+
+NORMATIVA    -    NOT_NULL    -    VARCHAR(11)
+
+POTENZA FISCALE    -    NOT_NULL    -    SMALLINT
+
+CILINDRATA    -    NOT_NULL    -    BIGINT
+
+KW    -    NOT_NULL    -    MEDIUMINT
+
+ANNO DI IMMATRICOLAZIONE    -    NOT_NULL    -    INT
+
+EMISSIONI CO2    -    NOT_NULL    -    MEDIUMINT
+
+CONSUMO (LITRI/100KM)    -    NOT_NULL    -    FLOAT(2,1)
+
+PREZZO DI LISTINO (IVA ESCLUSA)    -    NOT_NULL   -   DOUBLE(8,2)
+
+PREZZO CHIAVI IN MANO (IVA INCLUSA)    -    NOT_NULL   -   DOUBLE(8,2)
+
+TIPO DI CARBURANTE    -    NOT_NULL    -    VARCHAR (30)
+
+IMMAGINE DELLA MACCHINA    -    NULL    -    VARCHAR (255)
+
